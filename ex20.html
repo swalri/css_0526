@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+div {
+	height: 200px;
+	width: 200px;
+	margin: auto;
+}
+
+.id {
+	width: 200px;
+	height: 20px;
+	font-size: 20px;
+	border: none; /*테두리 삭제*/
+	border-bottom: 2px solid darkgray;
+	padding: 5px 0px;
+	margin: 10px 0px;
+}
+
+.id:focus {
+	outline: none;
+}
+
+.id::-webkit-input-placeholder {
+	text-align: center;
+	letter-spacing: 5px; /*글자끼리의 간격*/
+}
+
+.pwd {
+	border-radius: 5px; /*둥근 모서리 둥근정도*/
+	height: 20px;
+}
+
+.btn {
+	border-radius: 5px;
+	width: 200px;
+	height: 30px;
+	background: aquamarine;
+}
+</style>
+</head>
+<body>
+
+	<div>
+		<h3 style="text-align: center; border-bottom: 1px solid;">로그인 페이지
+		</h3>
+		<form action="">
+			<input type="text" class="id" placeholder="imput id"><br>
+			<input type="text" class="pwd" placeholder="imput password"><br>
+			<input type="submit" class="btn" value="LOGIN"><br>
+		</form>
+
+	</div>
+
+</body>
+</html>

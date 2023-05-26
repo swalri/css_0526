@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#wrap {
+	width: 500px;
+	height: 480px;
+	border: 4px solid black;
+	margin: auto; /*가로 가운데 정렬*/
+	text-align: center;
+}
+
+h1 {
+	margin: 0px;
+}
+
+h2 {
+	margin: 0px;
+	padding: 10px 0px;
+}
+
+header {
+	height: 90px;
+	background: red;
+	line-height: 90px;
+}
+nav {
+	height: 60px;
+	background: orange;
+}
+
+#container {
+	height: 260px;
+	display: flex;
+}
+section {
+	width: 70%;
+	background: green;
+}
+section .cl01 {
+	margin: 10px;
+	border:4px solid black;
+	background: pink;
+}
+
+aside {
+	width: 30%;
+	background: aqua;
+}
+
+footer {
+	height: 70px;
+	background: pink;
+}
+</style>
+</head>
+<body>
+
+	<div id="wrap">
+		<header>
+			<h1>&lt;header&gt;</h1>
+		</header>
+		<nav>
+			<h2>&lt;nav&gt;</h2>
+		</nav>
+		<div id="container">
+			<section>
+				<h2>&lt;section&gt;</h2>
+				<div class="cl01">&lt;header&gt;</div>
+				<div class="cl01">&lt;article&gt;</div>
+				<div class="cl01">&lt;footer&gt;</div>
+			</section>
+			<aside>
+				<h2>&lt;aside&gt;</h2>
+			</aside>
+		</div>
+		<footer>
+			<h2>&lt;footer&gt;</h2>
+		</footer>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#wrap {
+	width: 80%;
+	height: 200px;
+	border: 4px solid black;
+	margin: auto; /*가로 가운데 정렬*/
+	text-align: center;
+}
+
+#container {
+	display: flex;
+}
+
+#container div {
+	width: 33.333333%;
+	border: 1px solid black;
+	/* text-align: center; */
+}
+
+#container div:first-child { /*첫번째 자식*/
+	background: red;
+}
+
+#container div:nth-child(2) { /*n번째 자식*/
+	background: blue;
+}
+
+#container div:nth-child(3) {
+	background: aqua;
+}
+
+</style>
+</head>
+<body>
+
+	<div id="wrap">
+
+		<header style="background: gray;">제목이 들어옵니다</header>
+		<div id="container">
+			<div>
+				<h1>1</h1>
+			</div>
+			<div>
+				<h1>2</h1>
+			</div>
+			<div>
+				<h1>3</h1>
+			</div>
+		</div>
+		<footer style="background: maroon;">바닥글</footer>
+
+	</div>
+
+</body>
+</html>

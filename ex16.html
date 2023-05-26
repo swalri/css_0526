@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#wrap {
+	display: flex; /*직계자손만 영향을 받는다*/
+	width: 50%;
+	height: 200px;
+	margin: auto;
+	border: 4px solid black;
+	text-align: center;
+}
+
+#wrap div {
+	width: 33.333333%;
+}
+
+.cl_01 { /*지정당해도 첫번째 자식이다*/
+	order: 3; /*순서지정*/
+	background: red;
+}
+
+.cl_02 {
+	order: 2;
+	background: green;
+	display: flex;
+	flex-flow: column; /*세로배치*/
+	/* flex-flow:row; 가로배치*/
+}
+
+.cl_03 {
+	order: 1;
+	background: aqua;
+}
+
+.h01 {
+	order: 2;
+	background: fuchsia;
+}
+
+.h02 {
+	order: 1;
+	background: lime;
+}
+
+#wrap div:first-child { /*첫번째 자식*/
+	color: white;
+}
+</style>
+
+</head>
+<body>
+
+	<div id="wrap">
+		<div class="cl_01">
+			<h1>1</h1>
+		</div>
+		<div class="cl_02">
+			<h1 class="h01">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+			</h1>
+			<h1 class="h02">h02</h1>
+		</div>
+		<div class="cl_03">
+			<h1>3</h1>
+		</div>
+	</div>
+
+</body>
+</html>
